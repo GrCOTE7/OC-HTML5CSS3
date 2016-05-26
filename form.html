@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/bases.css">
+</head>
+<body>
+<section>
+    <p>Un paragraphe</p>
+
+    <form action="#" method="POST">
+        <label for="pseudo">Votre pseudo</label>
+        <input type="text" name="pseudo" id="pseudo" maxlength="8" placeholder="Saisir ICI" size="30"/><br/>
+        <label for="number">Numéro</label>
+        <input type="number" min=10 max=100 value="50" step="10" id="number"/>
+        <label for="color"></label>
+        <input type="color" id="color"/>
+        <label for="date"></label>
+        <input type="date" id="date"/>
+        <label for="search"></label>
+        <input type="search" id="search"/>
+        <label for="pays">Dans quel pays habitez-vous ?</label><br/>
+        <select name="pays" id="pays">
+            <optgroup label="Europe">
+                <option value="france">France</option>
+                <option value="espagne">Espagne</option>
+                <option value="italie">Italie</option>
+                <option value="royaume-uni">Royaume-Uni</option>
+            </optgroup>
+            <optgroup label="Amérique">
+                <option value="canada" selected>Canada</option>
+                <option value="etats-unis">Etats-Unis</option>
+            </optgroup>
+            <optgroup label="Asie">
+                <option value="chine">Chine</option>
+                <option value="japon">Japon</option>
+            </optgroup>
+        </select>
+        <fieldset>
+            <legend>Vos coordonnées</legend> <!-- Titre du fieldset -->
+
+            <label for="nom">Quel est votre nom ?</label>
+            <input type="text" name="nom" id="nom" autofocus required/>
+
+            <label for="prenom">Quel est votre prénom ?</label>
+            <input type="text" name="prenom" id="prenom" required/>
+
+            <label for="email">Quel est votre e-mail ?</label>
+            <input type="email" name="email" id="email"/>
+            <label for="details"></label>
+            <textarea name="details" id="details" cols="30" rows="10">Oki</textarea>
+
+        </fieldset>
+        <input type="submit" value="Envoyer"/>
+    </form>
+</section>
+</body>
+</html>

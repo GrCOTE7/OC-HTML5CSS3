@@ -100,12 +100,39 @@ html.bases_css {
     margin-top: 30px;
 }
 
-p:hover {
+button:hover {
     border-left: 3px solid black;
     padding-left: 10px;
     background-color: yellow;
 }
 
+table {
+    border-collapse: collapse;
+}
 
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+}
 
+:required {
+    border: 1px solid red;
+}
 
+:focus {
+    background-color: cornsilk;
+}
+
+/* Paragraphes en bleu par défaut */
+p {
+    color: blue;
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (max-width: 768px) {
+    p {
+        color: red;
+        background-color: black;
+        font-size: 1.2em;
+    }
+}

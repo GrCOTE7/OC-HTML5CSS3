@@ -1,0 +1,169 @@
+@font-face {
+    /* Définition d'une nouvelle police nommée wat */
+    font-family: 'wat';
+    src: url('../fonts/wat.ttf') format('truetype');
+}
+
+/*Reset des val défault*/
+html, body, section {
+    padding: 0;
+    margin: 0;
+    /*height: 10000px;*/
+    border: 0;
+}
+
+html {
+    /*Placement de l'image originale en fond*/
+    background: url(../imgs/lionel.jpg) no-repeat center fixed;
+    height: 100%;
+    background-size: cover;
+    border: 0;
+}
+
+body {
+    color: #620c99;
+    font-family: Comic Sans MS, Arial, serif;
+    /*Création du filigrane de l'image placée dans le html'*/
+    background-color: rgba(255, 255, 255, 0.77);
+    width: 100%;
+    overflow: auto;
+
+    border: 0;
+}
+
+/*Tout*/
+#all {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    min-height: 100%;
+    min-width: 200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#liseret, #cv {
+    box-shadow: .5em -.3em 15px #786c6c;
+}
+
+#liseret {
+    position: fixed;
+    background-color: grey;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin: 1%;
+    height: 97%;
+    width: 9%;
+}
+
+/*Le CV*/
+#cv {
+    padding: 1.5em 1em 2em;
+    margin: 1% 1% .5% 14%;
+
+    border-left: .3em solid #0ed6ff;
+    border-bottom: .3em solid #0ed6ff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    width: 100%;
+    transition: all 1.5s ease-in-out;
+}
+
+#cv h1:first-of-type {
+    font-family: wat, mirage, "Comic Sans MS", serif;
+    font-size: 5em;
+    padding: 0 2%;
+    margin: 0;
+    width: 70%;
+}
+
+#presentation {
+    transition: all 2.5s ease-in-out;
+    background: url("../imgs/lionel.jpg") no-repeat top right;
+}
+
+#presentation:hover {
+    background: url("../imgs/tn_lionel.jpg") no-repeat top right;
+    transition: all .4s ease-in-out;
+}
+
+#presentation a {
+    text-decoration: none;
+}
+
+#presentation p {
+    font-size: 1.5em;;
+    color: blue;
+    text-shadow: 2px -2px 0 #fff, 5px -3px 7px red;
+    text-align: justify;
+    font-style: italic;
+    padding: 0.3% 1%;
+    margin: 20px auto 0 auto;
+    width: 98%;
+    clear: both;
+}
+
+#presentation a p {
+    color: grey;
+}
+
+#presentation p em {
+    color: indigo;
+}
+
+#presentation p img {
+    margin-top: 1%;
+    margin-left: .5%;
+    width: .9em;
+    height: .9em;
+}
+
+/*Détails du CV*/
+#cvd {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 200px;
+    width: 100%;
+    overflow: auto;
+}
+
+h2 {
+    color: #555;
+    padding: 0 3%;
+}
+
+.bloc h2 {
+    padding-bottom: 1%;
+}
+
+@media screen and (max-width: 1024px) {
+    #liseret {
+        display: none;
+    }
+
+    #cv {
+        margin: 1% 1% .5% 1%;
+        transition: all 1.5s ease-in-out;
+    }
+
+    #cvd {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-width: 200px;
+        width: 100%;
+        overflow: auto;
+        /*transition: all 1s ease-in-out;*/
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #presentation {
+        /*background: none;*/
+        background-position: bottom;
+        height: 700px;
+    }
+}
