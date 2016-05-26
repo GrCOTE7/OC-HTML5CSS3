@@ -1,0 +1,203 @@
+@font-face {
+    /* Définition d'une nouvelle police nommée wat */
+    font-family: 'wat';
+    src: url('../fonts/wat.ttf') format('truetype');
+}
+
+* {
+    /*border: 1px solid red;*/
+}
+
+/*Reset des val défault*/
+html, body, section {
+    padding: 0;
+    margin: 0;
+    /*height: 10000px;*/
+    border: 0;
+}
+
+html {
+    /*Placement de l'image originale en fond*/
+    background: url(../imgs/lionel.jpg) no-repeat center fixed;
+    height: 100%;
+    background-size: cover;
+    /*width: 90%;*/
+
+    border: 0;
+}
+
+/*Création du filigrane de l'image placée dans le html'*/
+body {
+    color: #620c99;
+    font-family: Comic Sans MS, Arial, serif;
+    background-color: rgba(255, 255, 255, 0.77);
+    width: 100%;
+    /*height: 100%;*/
+    overflow: auto;
+
+    border: 0;
+}
+
+/*Tout*/
+#all {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    min-height: 100%;
+    min-width: 200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#liseret, #cv {
+    box-shadow: .5em -.3em 15px #786c6c;
+}
+
+#liseret {
+    position: fixed;
+    background-color: grey;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin: 1%;
+    /*margin-left: 10%;*/
+    height: 97%;
+    width: 9%;
+}
+
+/*Le CV*/
+#cv {
+    padding: 1.5em 1em 2em;
+    margin: 1% 1% .5% 14%;
+
+    border-left: .3em solid #0ed6ff;
+    border-bottom: .3em solid #0ed6ff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    width: 100%;
+    /*overflow: auto;*/
+}
+
+#cv h1:first-of-type {
+    font-family: wat, mirage, "Comic Sans MS", serif;
+    font-size: 5em;
+    padding: 0 2%;
+    margin: 0;
+    width: 70%;
+}
+
+section {
+    /*padding: 0 0 0 0;*/
+    /*margin-top: 0;*/
+}
+
+#presentation {
+    /*text-align: center;*/
+    text-shadow: 6px -5px 10px #777;
+    /*padding: 1.5em 1em 20px;*/
+    background: url("../imgs/lionel.jpg") no-repeat top right;
+    /*background-size: 20%;*/
+    /*background-position-y: 10%;*/
+    /*background-position-x: 96%;*/
+    /*background-color: rgba(255, 200, 108, 0.3);*/
+    /*width: 92%;*/
+}
+
+#presentation a {
+    text-decoration: none;
+}
+
+#presentation p {
+    font-size: 1.5em;;
+    /*color: #444;*/
+    color: blue;
+    /*text-shadow: 2px -2px 0px #fff, 5px -4px 10px #5a5151;*/
+    text-shadow: 2px -2px 0 #fff, 5px -3px 7px red;
+    text-align: justify;
+    font-style: italic;
+    padding: 0.3% 1%;
+    margin: 20px auto;
+    margin-left: 0;
+    width: 98%;
+    clear: both;
+    border: 1px solid red;
+}
+
+#presentation a p {
+    /*text-align: center;*/
+    color: grey;
+    /*font-style: italic;*/
+    /*margin: 2%;*/
+    /*margin-top: -100px;*/
+    /*!*width: 40%;*!*/
+}
+
+#presentation p em {
+    color: indigo;
+}
+
+#presentation #sloganperso {
+    /*color: red;*/
+    /*margin: 1% 0 0 1%;*/
+    /*padding: 0;*/
+}
+
+#presentation p img {
+    margin-top: 1%;
+    margin-left: 1%;
+
+    width: .9em;
+    height: .9em;
+}
+
+/*Détails du CV*/
+#cvd {
+    display: flex;
+    justify-content: flex-start;
+    /*width: 97%;*/
+
+    /*margin-left: 200px;*/
+    /*z-index: 10;*/
+
+    /*align-items: center;*/
+
+    /*flex-direction: column;*/
+    /*flex-direction: row-reverse;*/
+    /*flex-flow: row wrap;*/
+    /*border: 2px solid #444;*/
+    /*height: 130px;*/
+    /*margin-bottom: 999px;*/
+    min-width: 200px;
+    width: 100%;
+    overflow: auto;
+}
+
+h2 {
+    color: #555;
+    /*text-align: right;*/
+    /*margin-right: 3%;*/
+    /*border: 2px solid #2cd3ff;*/
+    /*width: 100%;*/
+    /*margin: 1%;*/
+    padding: 0 3%;
+    /*font-weight: bold;*/
+    /*background: rgba(255, 255, 255, .2);*/
+    /*margin: 3% auto 2%;*/
+    /*-webkit-border-radius: 7px;*/
+    /*-moz-border-radius: 7px;*/
+    /*border-radius: 7px;*/
+}
+
+.bloc h2 {
+
+    padding-bottom: 1%;
+}
+
+.bloc ul {
+    /*padding: 0;*/
+    /*padding: 100px 0 0 0;*/
+    /*width: 75%;*/
+    /*width: 90%;*/
+}
