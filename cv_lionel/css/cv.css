@@ -80,8 +80,13 @@ body {
 }
 
 #presentation {
-    text-shadow: 6px -5px 10px #777;
+    transition: all 2.5s ease-in-out;
     background: url("../imgs/lionel.jpg") no-repeat top right;
+}
+
+#presentation:hover {
+    background: url("../imgs/tn_lionel.jpg") no-repeat top right;
+    transition: all .4s ease-in-out;
 }
 
 #presentation a {
@@ -110,7 +115,7 @@ body {
 
 #presentation p img {
     margin-top: 1%;
-    margin-left: 1%;
+    margin-left: .5%;
     width: .9em;
     height: .9em;
 }
